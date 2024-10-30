@@ -1,0 +1,30 @@
+.cat-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.cat-info-item {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    background-color: rgba(255, 255, 255, 0.753);
+    transition: 0.5s;
+}
+
+.cat-info-item .cat-content-info {
+    position: absolute;
+
+}
+
+.cat-content-info p {
+    font-size: 16px;
+}
+
+.cat-item:hover {
+    cursor: pointer;
+}
+
+.cat-item:hover .cat-info-item {
+    top: 0;
+}
