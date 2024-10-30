@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/categories.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+
+
+</head>
+
+<body class="bg-black">
+
+
+    <nav class="bg-black vh-100 in-active">
+
+        <div class="sidebar d-flex justify-content-between flex-column p-4 ">
+            <div class="linkes pointer" id="links">
+                <ul>
+                    <li><a href="" onclick="Search(event)">Search</a></li>
+                    <li><a href="" onclick="getCategories(event)">Categories</a></li>
+                    <li><a href="" onclick="getArea(event)">Area</a></li>
+                    <li><a href="" onclick="getIngredients(event)">Ingredients</a></li>
+                    <li><a href="" onclick="contactUs(event)">Contact Us</a></li>
+                </ul>
+
+            </div>
+            <div class="end-nav">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+                <p>Copyright Â© 2024 All Rights
+                    Reserved.</p>
+            </div>
+        </div>
+        <div class="side d-flex flex-column justify-content-between align-items-center px-2 py-4 bg-white">
+            <img src="./images/logo.png" class="icon" alt="not-loaded">
+            <i class="fa-solid fa-bars side-i " onclick="openSidebar()" id="open"></i>
+            <i class="fa-solid fa-x side-i in-active" onclick="closeSidebar()" id="close"></i>
+            <div class="icon-end d-flex flex-column">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes mt-1"></i>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="row d-flex justify-content-center g-4 " id="search-box"></div>
+    <main class="min-vh-100">
+        <div class="spinner w-100  in-active">
+            <i class="fa-solid fa-spinner fa-spin text-white "></i>
+        </div>
+        <div class="container ">
+
+        </div>
+    </main>
+
+
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
